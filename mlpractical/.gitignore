@@ -63,6 +63,13 @@ target/
 # Pycharm
 .idea/*
 
+# Google Cloud
+google-cloud-sdk/
+report/
+MLP2021_22_cw2.pdf
+data/cifar-100-python.tar.gz 
+data/cifar-100-python/
+
 
 #Notebook stuff
 notebooks/.ipynb_checkpoints/
