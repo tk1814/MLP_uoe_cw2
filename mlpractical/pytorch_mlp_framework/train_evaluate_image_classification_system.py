@@ -5,6 +5,8 @@ from torchvision import transforms
 
 import sys
 sys.path.append('/mnt/c/Users/theod/git/MLP_uoe_cw2/mlpractical')
+#gcloud directory
+#sys.path.append('/home/theok/MLP_uoe_cw2/mlpractical')
 import mlp.data_providers as data_providers
 from pytorch_mlp_framework.arg_extractor import get_args
 from pytorch_mlp_framework.experiment_builder import ExperimentBuilder
