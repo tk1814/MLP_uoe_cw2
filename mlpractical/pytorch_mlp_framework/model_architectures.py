@@ -476,8 +476,8 @@ class ConvolutionalProcessingBlockBN_RC(nn.Module):
         self.layer_dict['bn_1'] = nn.BatchNorm2d(num_features=out.shape[1])
         #out = F.leaky_relu(self.layer_dict['bn_1'].forward(out+x))
         out = self.layer_dict['bn_1'].forward(out)
-        out = F.leaky_relu(out)
-        out += x
+        out = F.leaky_relu(out+x)
+        #out += x
 
         print(out.shape)
 
@@ -490,8 +490,8 @@ class ConvolutionalProcessingBlockBN_RC(nn.Module):
         out = self.layer_dict['conv_1'].forward(out)
         #out = F.leaky_relu(self.layer_dict['bn_1'].forward(out+x))
         out = self.layer_dict['bn_1'].forward(out)
-        out = F.leaky_relu(out)
-        out += x
+        out = F.leaky_relu(out+x)
+        #out += x
 
         return out    
     
